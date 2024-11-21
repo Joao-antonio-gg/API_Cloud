@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+bcrypt
+pyjwt
+requests
+bs4
+selenium
