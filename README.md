@@ -1,7 +1,11 @@
 # API_Cloud
 
 Nome: João Antônio Gomes Garcia  
-Site sobre o projeto: https://joao-antonio-gg.github.io/API_Cloud/
+Site sobre o projeto: https://joao-antonio-gg.github.io/API_Cloud/  
+Videos do projeto:
+Video de teste do Docker: https://www.youtube.com/watch?v=fRn-cT1RuOc&feature=youtu.be    
+Video de teste na aws : https://www.youtube.com/watch?v=GvXV0d48LC0   
+Video de como subi na aws: https://youtu.be/xZbhdwnuVLg  
 ## Sobre o Projeto
 Foi feito uma API utilizando 3 caminhos que foram : /registrar para criar um novo usuario, o /login para fazer login e pegar uma chave jwt e o /consultar que serve para você mandar o seu tolken valido e te retornar o valor do dolar diario com o valor mais alto e mais baixo daquele dia até então.
 
