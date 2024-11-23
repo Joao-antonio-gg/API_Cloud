@@ -1,0 +1,6 @@
+site_name: FastAPI
+repo_url: https://github.com/Joao-antonio-gg/API_Cloud
+edit_uri: ""  # Desabilita o redirecionamento para edição
+markdown_extensions:
+  - codehilite:
+      guess_lang: false
