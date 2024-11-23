@@ -2,7 +2,7 @@
 
 Nome: João Antônio Gomes Garcia  
 Site sobre o projeto: https://joao-antonio-gg.github.io/API_Cloud/  
-Videos do projeto:
+Videos do projeto:  
 Video de teste do Docker: https://www.youtube.com/watch?v=fRn-cT1RuOc&feature=youtu.be    
 Video de teste na aws : https://www.youtube.com/watch?v=GvXV0d48LC0   
 Video de como subi na aws: https://youtu.be/xZbhdwnuVLg  
