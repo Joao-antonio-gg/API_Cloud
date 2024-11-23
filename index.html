@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>FastAPI</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">FastAPI</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/Joao-antonio-gg/API_Cloud" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#projeto-cloud" class="nav-link">Projeto Cloud</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#escopo" class="nav-link">Escopo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#imagem-do-docker" class="nav-link">Imagem do Docker</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#execultando-o-projeto" class="nav-link">Execultando o Projeto</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#end-poits" class="nav-link">End Poits</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#aws" class="nav-link">AWS</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="projeto-cloud">Projeto Cloud</h1>
+<p>Este foi um projeto feito em python juntamente com Docker para ser rodado em uma imagem Docker.  </p>
+<h2 id="escopo">Escopo</h2>
+<p>Foi feito uma API utilizando 3 caminhos que foram : /registrar para criar um novo usuario, o /login para fazer login e pegar uma chave jwt e o /consultar que serve para você mandar o seu tolken valido e te retornar o valor do dolar diario com o valor mais alto e mais baixo daquele dia até então.  </p>
+<h2 id="imagem-do-docker">Imagem do Docker</h2>
+<p><a href="https://hub.docker.com/r/joaoagg/api_ja" id="Imagem do projeto">Imagem do projeto no Docker</a>  </p>
+<h2 id="execultando-o-projeto">Execultando o Projeto</h2>
+<p>Para começar execultar o projeto precisa fazer o Dowload do aqruivo compose.yaml asseguir:</p>
+<p><a href="https://github.com/Joao-antonio-gg/API_Cloud/blob/main/compose.yaml" id="downloadLink">Baixar Arquivo aqui</a>  </p>
+<p>Após baixar o arquivo é só rodar o seguinte comando se tiver o Docker baixado em seu computador :  </p>
+<div class="codehilite"><pre><span></span><code>docker-compose up -d
+</code></pre></div>
+
+<p>Após isso só será precisso acessar o seguinte link:</p>
+<p><a href="http://localhost:8000/docs" id="acessar">http://localhost:8000/docs</a>  </p>
+<p>Para maior referencia de como utilizar o API pode serguir o tutorial abaixo:</p>
+<p><a href="https://youtu.be/fRn-cT1RuOc" id="Link do tutorial">Link do tutorial</a>  </p>
+<h2 id="end-poits">End Poits</h2>
+<p>Para acessar a API pelo terminal, você pode usar o comando curl. Aqui estão alguns exemplos de como usar a API:  </p>
+<ul>
+<li>
+<p>Criar Usuario:  </p>
+<p><code>curl -X POST http://localhost:8000/registrar -d '{"nome": "teste", "email": "teste@teste.com", "senha": "teste"}'</code>   </p>
+</li>
+<li>
+<p>Login:  </p>
+<p><code>curl -X POST http://localhost:8000/login -d '{"email": "teste@teste.com", "senha": "teste"}'</code>    </p>
+</li>
+<li>
+<p>Cotação maxima e minima do Dolar:  </p>
+<p><code>curl -X GET http://localhost:8000/consultar \ -H 'Authorization: Bearer {token_jwt_aqui}'</code>   </p>
+</li>
+</ul>
+<p>Outra forma de testar é usar o postman para fazer essas requisições.  </p>
+<p>Ou </p>
+<p>No proprio /docs onde pode testar com exemplos de lá, como mostrado no video.</p>
+<h2 id="aws">AWS</h2>
+<p>Após isso foi feito o deploy da Imagem na AWS.  </p>
+<p>Que pode ser acessado atraves do link a seguir:  </p>
+<p><a href="http://a41a10da76e83446b9ccd150fbc97896-323563.us-east-1.elb.amazonaws.com/docs" id="acessar">http://a41a10da76e83446b9ccd150fbc97896-323563.us-east-1.elb.amazonaws.com/docs</a>  </p>
+<p>Ele funciona da mesma forma que o anterior, a seguir vou falar um pouco mais de como isso foi feito.</p>
+<ul>
+<li>
+<h3 id="como-foi-feito-o-build">Como foi feito o Build</h3>
+</li>
+</ul>
+<p>O build foi feito em alguns passos diferentes  </p>
+<ul>
+<li>Primeiro passo:  </li>
+</ul>
+<p>Foi feito dois novos arquivos um deles sendo o arquivo db-deployment.yaml  </p>
+<div class="codehilite"><pre><span></span><code>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+      - name: postgres
+        image: postgres:13
+        env:
+          - name: POSTGRES_USER
+            value: &quot;user&quot;
+          - name: POSTGRES_PASSWORD
+            value: &quot;password&quot;
+          - name: POSTGRES_DB
+            value: &quot;dbname&quot;
+        ports:
+          - containerPort: 5432
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres
+spec:
+  ports:
+    - port: 5432
+      targetPort: 5432
+  selector:
+    app: postgres
+</code></pre></div>
+
+<p>O outro arquivo seria o web-deployment.yaml:</p>
+<div class="codehilite"><pre><span></span><code>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fastapi
+  template:
+    metadata:
+      labels:
+        app: fastapi
+    spec:
+      containers:
+      - name: fastapi
+
+        image: joaoagg/api_ja:web
+        env:
+          - name: DATABASE_URL
+            value: &quot;postgresql://user:password@postgres:5432/dbname&quot;
+        ports:
+          - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: fastapi-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      targetPort: 8000
+  selector:
+    app: fastapi
+</code></pre></div>
+
+<ul>
+<li>O segundo passo seria seria criar os clusters EKS:  </li>
+</ul>
+<div class="codehilite"><pre><span></span><code>eksctl create cluster --name fast --region us-east-1 --nodes 2
+</code></pre></div>
+
+<ul>
+<li>Depois configurar o kubectl para acessar o cluster:  </li>
+</ul>
+<div class="codehilite"><pre><span></span><code>aws eks --region us-east-1 update-kubeconfig --name fast
+</code></pre></div>
+
+<ul>
+<li>Após estes passos aplicamos o deployment nos clusters:  </li>
+</ul>
+<div class="codehilite"><pre><span></span><code>kubectl apply -f db-deployment.yml
+kubectl apply -f web-deployment.yml
+</code></pre></div>
+
+<ul>
+<li>Por último e não menos importante acessar a aplicação no Load Balancer:</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>kubectl get svc fastapi-service
+</code></pre></div>
+
+<p>Aqui temos um vídeo mostrando a API funcionando na AWS:  </p>
+<p><a href="https://youtu.be/GvXV0d48LC0" id="Link do tutorial">Video da AWS funcionando</a>  </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2024-11-23 02:24:39.217355+00:00
+-->
